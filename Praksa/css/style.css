@@ -1,0 +1,286 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: 'Poppins';
+}
+
+/*NAVBAR*/
+nav {
+	width: 100%;
+	display: inline-block;
+	background-image: linear-gradient(to bottom right, rgba(202, 205, 207, 0), rgba(202, 205, 207, 1));
+}
+
+.logo {
+	display: inline-block;
+	margin: 5px 20px
+}
+
+
+.navbar-list {
+	float: right;
+	list-style-type: none;
+	display: inline-block;
+}
+
+
+li {
+	font-family: 'Poppins', sans-serif;
+	display: inline-block;
+	padding: 10px;
+	margin-top: 5px;
+}
+
+
+/*SLIDER*/
+
+.carousel-inner {
+	max-height: 500px;
+}
+
+.item {
+	height: 350px;
+	overflow: hidden;
+}
+
+.simg {
+	max-height: 350px;
+}
+
+/*CONTENT*/
+
+.split {
+	text-align: center;
+	font-family: 'Poppins';
+	position: static;
+}
+
+h1 {
+	margin: 0;
+	background-color: rgb(111,78,55) ;
+	color: white;
+}
+
+.mpic {
+	max-height: 60vh;
+}
+
+.wrap {
+	display: flex;
+	align-items: center;
+	background-color:rgb(181, 127, 80, 0.3);
+}
+
+.text {
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	flex: 3;
+}
+
+.dpic {
+	flex: 2;
+}
+
+img {
+	margin: auto;
+}
+
+footer {
+	text-align: center;
+	background-image: linear-gradient(to top right, rgba(202, 205, 207, 0), rgba(202, 205, 207, 1));
+}
+
+.footer {
+	margin: 0px 0px 0px 0px;
+}
+
+@media (max-width: 768px) {
+	.wrap {
+		flex-direction: column;
+	}
+	.mpic {
+		max-height: 90vh;
+		margin: 10px 0;
+	}
+}
+
+/*CONTACT*/
+
+
+#contact{
+	padding:10px 0 10px;
+}
+
+.contact-text{
+	margin:45px auto;
+}
+
+.mail-message-area{
+	width:100%;
+	padding:0 15px;
+}
+
+.mail-message{
+	width: 100%;
+	background:rgba(255,255,255, 0.8) !important;
+	-webkit-transition: all 0.7s;
+	-moz-transition: all 0.7s;
+	transition: all 0.7s;
+	margin:0 auto;
+	border-radius: 0;
+}
+
+.not-visible-message{
+	height:0px;
+	opacity: 0;
+}
+
+.visible-message{
+	height:auto;
+	opacity: 1;
+	margin:25px auto 0;
+}
+
+/* Input Styles */
+
+.form{
+	width: 100%;
+	padding: 15px;
+	background:#f8f8f8;
+	border:1px solid rgba(0, 0, 0, 0.075);
+	margin-bottom:25px;
+	color:#727272 !important;
+	font-size:13px;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+}
+
+.form:hover{
+	border:1px solid #8BC3A3;
+}
+
+.form:focus{
+	color: white;
+	outline: none;
+	border:1px solid #8BC3A3;
+}
+
+.textarea{
+	height: 200px;
+	max-height: 200px;
+	max-width: 100%;
+}
+
+/* Generic Button Styles */
+
+.button{
+	padding:8px 12px;
+	background:#0A5175;
+	display: block;
+	width:120px;
+	margin:10px 0 0px 0;
+	border-radius:3px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	text-align:center;
+	font-size:0.8em;
+	box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+	-moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+	-webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+}
+
+.button:hover{
+	background:#8BC3A3;
+	color:white;
+}
+
+/* Send Button Styles */
+
+.form-btn{
+	width:180px;
+	display: block;
+	height: auto;
+	padding:15px;
+	color:#fff;
+	background:#8BC3A3;
+	border:none;
+	border-radius:3px;
+	outline: none;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	margin:auto;
+	box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+	-moz-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+	-webkit-box-shadow: 0px 1px 4px rgba(0,0,0, 0.10);
+}
+
+.form-btn:hover{
+	background:#111;
+	color: white;
+	border:none;
+}
+
+.form-btn:active{
+	opacity: 0.9;
+}
+}
+
+input {
+	position: relative;
+	z-index: 9999;
+}
+
+.con-head {
+	max-height: 50%;
+	max-width: 100%;
+}
+
+.c-split {
+	margin-bottom: 10px;
+}
+
+.h-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	border: 2px solid black;
+	padding: 10px;
+	background: rgb(255,255,255, 0.3);
+	font-size: xx-large;
+}
+
+.relative {
+	margin-bottom: 20px;
+}
+
+.map {
+	width: 90%;
+	display: block;
+	margin: 0 auto;
+}
+
+.c-foot {
+	margin-top: 10px;
+}
+
+.p-container {
+	position: relative;
+}
+
+.c-wrap {
+	position: relative;
+	margin: 15px 15px;
+}
+
+.map-wrap {
+	max-width: 100%;
+	overflow: hidden;	
+}
