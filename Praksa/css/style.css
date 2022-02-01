@@ -257,6 +257,12 @@ input {
 	font-size: xx-large;
 }
 
+@media (max-width: 486px) {
+	.h-text {
+		font-size: larger;
+	}
+}
+
 .relative {
 	margin-bottom: 20px;
 }
